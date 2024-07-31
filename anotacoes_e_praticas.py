@@ -73,7 +73,7 @@ def contagens(minha_lista1): # uma funçõa chamada contagens -
     if palavra not in palavras: 
         palavras[palavra] = 0 # Se palavra não estiver no dicionario, o valor será 0
 
-        palavras[palavra] += 1 # Será incrementado u mais um número
+        palavras[palavra] += 1 # Será incrementado mais um número
         return palavras  # chama a função
   
 print(contagens(lista_palavras))
