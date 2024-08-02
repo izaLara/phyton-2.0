@@ -25,3 +25,6 @@ print(histogram[palavra])
 
 # ATIVIDADE 11
 
+
+
+#sudoku - documentação = fluxograma

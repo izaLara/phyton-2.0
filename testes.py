@@ -54,10 +54,10 @@
 
 #
 
-compras4 = ['leite', 'couve', 'tomate']
-compras5 = ['sal', 'arroz', 'ovos']
-compras = compras4 + compras5
-print(compras)
+# compras4 = ['leite', 'couve', 'tomate']
+# compras5 = ['sal', 'arroz', 'ovos']
+# compras = compras4 + compras5
+# print(compras)
 
 ###
 
@@ -107,3 +107,193 @@ print(compras)
 #         return palavras
   
 # print(contagens(lista_palavras))
+
+
+# import NumPy as np
+
+
+# def is_valid(sudoku, x, y, value):
+#     return value not in sudoku[x, :] and value not in sudoku[:, y] and value not in quadrant(sudoku, x, y)
+
+
+# def quadrant(sudoku, x, y):
+#     xx = x // 3
+#     yy = y // 3
+#     return sudoku[xx * 3:(xx + 1) * 3, yy * 3:(yy + 1) * 3]
+
+
+# def possibilities(sudoku, x, y):
+#     possibilities = list()
+#     for value in range(1, 10):
+#         if is_valid(sudoku, x, y, value):
+#             possibilities.append(value)
+#     return possibilities
+
+
+# def solver(sudoku, solutions):
+#     for (x, y), value in np.ndenumerate(sudoku):
+#         if value == 0:
+#             for possibility in possibilities(sudoku, x, y):
+#                 sudoku[x, y] = possibility
+#                 solver(sudoku, solutions)
+#                 sudoku[x, y] = 0
+#             return
+#     solutions.append(sudoku.copy())
+
+
+# if __name__ == '__main__':
+#     sudoku = np.array([5, 3, 0, 0, 7, 0, 0, 0, 0,
+#                        6, 0, 0, 1, 9, 5, 0, 0, 0,
+#                        0, 9, 8, 0, 0, 0, 0, 6, 0,
+#                        8, 0, 0, 0, 6, 0, 0, 0, 3,
+#                        4, 0, 0, 8, 0, 3, 0, 0, 1,
+#                        7, 0, 0, 0, 2, 0, 0, 0, 6,
+#                        0, 6, 0, 0, 0, 0, 2, 8, 0,
+#                        0, 0, 0, 4, 1, 9, 0, 0, 5,
+#                        0, 0, 0, 0, 8, 0, 0, 7, 9]).reshape([9, 9])
+#     solutions = list()
+#     solver(sudoku, solutions)
+#     for solution in solutions:
+#         print(solution)
+
+
+# def quadrante(num_alt,sudoku):
+    
+#     sudoku=[3, 3, 0, 0, 7, 0, 0, 0, 0,
+#         6, 0, 0, 1, 9, 5, 0, 0, 0,
+#         0, 9, 8, 0, 0, 0, 0, 6, 0,
+#         8, 0, 0, 0, 6, 0, 0, 0, 3,
+#         4, 0, 0, 8, 0, 3, 0, 0, 1,
+#         7, 0, 0, 0, 2, 0, 0, 0, 6,
+#         0, 6, 0, 0, 0, 0, 2, 8, 0,
+#         0, 0, 0, 4, 1, 9, 0, 0, 5,
+#         0, 0, 0, 0, 8, 0, 0, 7, 9]
+
+
+# alteracao = input (" ")
+
+# print(alteracao)
+
+# minha_lista2 = [2,3,4],[3,4,5],[3,4,5],[3,4,5],[3,4,5],[3,4,5],[3,4,5],[3,4,5],[3,4,5]
+
+# for item in minha_lista2:
+#    print(item)
+
+# produtos = [
+#     {'id': '2810', 'tipo': 'forno', 'ano': 2020},
+#     {'id': '9812', 'tipo': 'celular', 'ano': 2019},
+#     {'id': '7756', 'tipo': 'geladeira', 'ano': 2022}
+# ]
+
+# print(produtos)
+# ###
+
+# sudoku = [
+#   [9, 0, 0, 0, 8, 0, 3, 0, 0],
+#   [0, 0, 0, 2, 5, 0, 7, 0, 0],
+#   [0, 2, 0, 3, 0, 0, 0, 0, 4],
+#   [0, 9, 4, 0, 0, 0, 0, 0, 0],
+#   [0, 0, 0, 7, 3, 0, 5, 6, 0],
+#   [7, 0, 5, 0, 6, 0, 4, 0, 0],
+#   [0, 0, 7, 8, 0, 3, 9, 0, 0],
+#   [0, 0, 1, 0, 0, 0, 0, 0, 3],
+#   [3, 0, 0, 0, 0, 0, 0, 0, 2]
+# ]
+
+# def jogo (numeros , alteracao):
+#     numeros = sudoku[0][3]  
+#     alteracao = input("Digite um número: ")
+
+#     for numero in sudoku:
+#         print(alteracao)
+
+#     if numero == numeros:
+#             print("erro")
+#             return numeros
+# print(jogo)
+    
+
+
+# lista6 = ['um', 2, 3.14, [10, 20, 30]]
+# lista6[3] = 4 # Seleciona o elemento, e o da um novo valor
+# print(lista6)
+
+
+# sudoku = [[1,2,3,0,0,0,0,0,4,
+#            2,3,4,5,6,7,0,0,0,
+#            7,8,5,3,0,1,0,1,0],
+#            [5,7,6,1,0,0,0,4,0,
+#            4,0,0,0,4,0,0,0,0]]
+
+# def contagens(sudoku): # uma função chamada contagens - 
+#   lista = {}  # Dicionario -- se encontra vazio
+
+#   for numero in sudoku: # se palavra estiver na minha_lista, executa o código:
+      
+#     if numero not in lista: 
+#         print(sudoku[1][0]) # Se palavra não estiver no dicionario, o valor será 0
+
+#         lista[numero] = 0# Será incrementado mais um número
+#         return lista  # chama a função
+  
+# print(contagens(sudoku))
+
+
+# sudoku = [1,2,3,0,0,0,0,0,4,
+#            2,3,4,5,6,7,0,0,0,
+#            7,8,5,3,0,1,0,1,0,
+#            5,7,6,1,0,0,0,4,0,
+#            4,0,0,0,4,0,0,0,0]
+
+# def jogo(sudoku):
+#     numeros = {}
+
+#     for numero in sudoku:
+
+#         if numero not in numeros:
+#            numeros[numero] == 0
+
+
+#         return numeros
+
+
+# print(jogo(sudoku))
+
+
+
+
+# import pygame
+# pygame()
+# Janela = pygame.display.set_mode (( 500 , 500 ))
+# pygame. display.set_caption ( "JOGO SUDOKU por DataFlair" )
+# x = 0
+# z = 0
+# diferença = 500 / 9
+# valor = 0
+# grid_padrão = [
+#         [ 0 , 0 , 4 , 0 , 6 , 0 , 0 , 0 , 5 ] ,
+#         [ 7 , 8 , 0 , 4 , 0 , 0 , 0 , 2 , 0 ] ,
+#         [ 0 , 0 , 2 , 6 , 0 , 1 , 0 , 7 , 8 ] ,
+#         [ 6 , 1 , 0 , 0 , 7 , 5 , 0 , 0 , 9 ] ,
+#         [ 0 , 0 , 7 , 5 , 4 , 0 , 0 , 6 , 1 ] ,
+#         [ 0 , 0 , 1 , 7 , 5 , 0 , 9 , 3 , 0 ] ,
+#         [ 0 , 7 , 0 , 3 , 0 , 0 , 0 , 1 , 0 ] ,
+#         [ 0 , 4 , 0 , 2 , 0 , 6 , 0 , 0 , 7 ] ,
+#         [ 0 , 2 , 0 , 0 , 0 , 7 , 4 , 0 , 0 ] ,
+#     ]
+ 
+ 
+# fonte = pygame.fonte.SysFont( "comicsans" , 40 )
+# font1 = pygame.fonte.SysFont( "comicsans" , 20 )
+
+# def cordão ( pos ) : 
+
+#     global x
+#     x = pos [ 0 ] //diferença
+#     z global z
+#     z = pos [ 1 ] //diferença
+ 
+# def destaquebox () : 
+#     for k in range ( 2 ) : 
+#         pygame ( Janela , ( 0,0,0 ) , ( x * diff- 3 , ( z +k ) * diff ) , ( x * diff +diff+ 3 , ( z + k ) * diff ) , 7 )
+#         pygame ( Janela , ( 0,0,0 ) , ( ( x+k ) * diferença ,z * diferença ) , ( ( x +k ) * diferença,z * diferença + diferença ) , 7 )   

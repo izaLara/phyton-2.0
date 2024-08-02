@@ -91,6 +91,14 @@ compras = compras4 + compras5
 print(compras) # Aqui duas variaveis estão sendo CONCATENADAS
 
 
+### FOR
+
+minha_lista2 = [2,3,4]
+
+for item in minha_lista2:
+   print(item)
+
+
 # O método COUNT conta o numero de vezes que o item ou substring especificado ocorre no alvo. O método funciona de forma semelhante com string e listas
 minha_string = "Quantas madeiras um esquilo empilharia se pudesse empilhar madeira"
 print(minha_string.count("ma"))
